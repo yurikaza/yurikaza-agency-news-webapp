@@ -1,0 +1,100 @@
+@import 'intro';
+body {
+  font-family: 'Montserrat', sans-serif;
+  img {
+    width: 200px;
+  }
+}
+
+.flexboxs {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  height: 110vh;
+  .man {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    h1 {
+      text-align: start !important;
+      width: 90%;
+      font-size: calc(3rem + 30%);
+    }
+    .image {
+      img {
+        width: calc(10rem + 50%);
+        height: calc(5rem + 30%);
+      }
+    }
+  }
+  .texts {
+    width: 50%;
+    padding-top: 15rem;
+    .texts-2 {
+       a {
+        color: #fff;
+        text-decoration: none;
+        button {
+          border: none;
+          background-color: rgb(22, 22, 22);
+          color: #fff;
+          font-size: .8rem;
+          width: 6rem;
+          height: 2rem;
+        }
+       }
+    }
+  }
+}
+button {
+  border: none;
+  background-color: rgb(22, 22, 22);
+  color: #fff;
+  font-size: .8rem;
+  width: 6rem;
+  height: 2rem;
+}
+
+// RESPONSIVE DESIGN
+
+@media screen and (max-width: 750px) {
+  .flexboxs {
+    display: flex;
+    width: 90%;
+    padding-right: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 15rem;
+    min-height: 100%;
+    flex-direction: column;
+    .man {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+     
+      h1 {
+        text-align: start !important;
+        width: 90%;
+        font-size: calc(2rem + 30%);
+      }
+      .image {
+        img {
+          width: calc(10rem + 50%);
+          height: calc(5rem + 30%);
+          padding-top: 1rem;
+        }
+      }
+    }
+    .texts {
+      width: 70%;
+      padding-top: 1rem;
+      text-align: start;
+    }
+  }
+}

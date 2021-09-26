@@ -3,7 +3,7 @@ const newsRouter = express.Router();
 const axios = require("axios");
 require("dotenv").config();
 
-newsRouter.get("", async (req, res) => {
+newsRouter.get("/", async (req, res) => {
   try {
     const newsApı = await axios.get(
       `https://api.currentsapi.services/v1/latest-news?language=en&apiKey=${process.env.API_KEY}`

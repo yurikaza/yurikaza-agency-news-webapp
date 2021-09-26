@@ -1,18 +1,20 @@
+<!--
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Yurikaza News</a>
     <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+    class="navbar-toggler"
+    type="button"
+    data-mdb-toggle="collapse"
+    data-mdb-target="#navbarCenteredExample"
+    aria-controls="navbarCenteredExample"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+    <a class="navbar-brand" href="#">Yurikaza News</a>
+
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -49,5 +51,60 @@
         </li>
       </ul>
     </div>
+  </div>
+</nav>
+
+-->
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-start"
+      id="navbarSupportedContent"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item"href="/sport">Sport</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/finance">Finance</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/technology">Technology</a></li>
+          </ul>
+        </li>
+    </div>
+
+    <ul class="navbar-nav justify-content-center text-center w-100">
+       <a class="navbar-brand" href="/">Yurikaza News</a>
+    </ul>
+    <div
+    class="collapse navbar-collapse justify-content-start"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+
+      <li class="nav-item w-100">
+        <a class="nav-link" href="/contactUs">Contact</a>
+      </li>
+    <li class="nav-item w-40">
+      <a class="nav-link " href="/about" tabindex="-1" aria-disabled="true"
+        >About</a
+      >
+    </li>
+  </ul>
+</div>
   </div>
 </nav>
